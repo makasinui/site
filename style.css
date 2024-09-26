@@ -89,13 +89,77 @@ body, html, #app {
 }
 
 .footer {
-  margin-top: 90px; 
+  margin-top: 90px;
   background: #B52236;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  color: white;
+  font-size: 18px;
+}
+.footer-text, .footer-menu, .footer-social {
+  padding: 90px 0;
+}
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+}
+.footer-text .underline {
+  margin-top: 25px;
+  font-size: 14px;
+  text-decoration: underline;
+}
+.footer-menu {
+  display: flex;
+  gap: 120px;
+}
+.footer-menu .menu-block li{
+  list-style-type: none;
+  line-height: 40px;
+}
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.footer-social .phone-block {
+  display: flex;
+  align-items: center;
+}
+.footer-social .phone {
+  font-size: 18px;
+  padding-right: 38px;
 }
 
-.footer-menu {
-  
+.title {
+  text-align: center;
+  font-size: 48px;
+  margin-top: 90px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.btn-outline {
+  font-size: 24px;
+  padding: 35px 0;
+  width: 33%;
+  max-width: 424px;
+  color: black;
+  border:1px solid rgba(181, 34, 54, 1);
+}
+
+.btn-outline:hover, .btn-outline.active {
+  transition: 0.5s all;
+  background-color: rgba(252, 207, 193, 0.21);
+  color: black;
+  border:1px solid rgba(181, 34, 54, 1);
+}
+.btn-outline:active {
+  background-color: inherit;
+  color: black;
+  border:1px solid rgba(181, 34, 54, 1);
+}
+.btn-outline:focus {
+  box-shadow: none;
 }
