@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../styles/service.css">
+    <link rel="stylesheet" href="../styles/sidebar.css">
+    <link rel="stylesheet" href="../styles/modal.css">
     <title>Vite App</title>
   </head>
   <body>
@@ -49,7 +51,7 @@
                     </div>
                     <div class="tab-content">
                         <div class="tab-item">
-                            <div class="tab-item__name">
+                            <div class="tab-item__name" data-modal="#service">
                                 Программа для двоих “Нирвана”
                                 
                             </div>
@@ -64,7 +66,7 @@
                                 </div>
                             </div>
                             <div class="tab-item__buttons max-hidden">
-                                <button class="btn buy btn-outline">
+                                <button data-modal="#cart" class="btn buy btn-outline">
                                     Купить сертификат
                                 </button>
                                 <button class="btn buy btn-filled">
@@ -76,79 +78,7 @@
                             </div>
                         </div>
                         <div class="tab-item">
-                            <div class="tab-item__name">
-                                Программа для двоих “Нирвана”
-                            </div>
-                            <div class="tab-item__icons max-hidden">
-                                <div class="icons-icon">
-                                    <img src="/public/img/time.png" alt="">
-                                    60 мин
-                                </div>
-                                <div class="icons-icon">
-                                    <img src="/public/img/money.png" alt="">
-                                    7635 ₽
-                                </div>
-                            </div>
-                            <div class="tab-item__buttons max-hidden">
-                                <button class="btn buy btn-outline">
-                                    Купить сертификат
-                                </button>
-                                <button class="btn buy btn-filled">
-                                    Записаться
-                                </button>
-                            </div>
-                            <div class="tab-item__plus max-visible hidden">
-                                <img src="/public/img/plus.png" alt="">
-                            </div>
-                        </div>
-                        <div class="tab-item">
-                            <div class="tab-item__name">
-                                Программа для двоих “Нирвана”
-                            </div>
-                            <div class="tab-item__icons max-hidden">
-                                <div class="icons-icon">
-                                    <img src="/public/img/time.png" alt="">
-                                    60 мин
-                                </div>
-                                <div class="icons-icon">
-                                    <img src="/public/img/money.png" alt="">
-                                    7635 ₽
-                                </div>
-                            </div>
-                            <div class="tab-item__buttons max-hidden">
-                                <button class="btn buy btn-filled">
-                                    Записаться
-                                </button>
-                            </div>
-                            <div class="tab-item__plus max-visible hidden">
-                                <img src="/public/img/plus.png" alt="">
-                            </div>
-                        </div>
-                        <div class="tab-item">
-                            <div class="tab-item__name">
-                                Программа для двоих “Нирвана”
-                            </div>
-                            <div class="tab-item__icons max-hidden">
-                                <div class="icons-icon">
-                                    <img src="/public/img/time.png" alt="">
-                                    60 мин
-                                </div>
-                                <div class="icons-icon">
-                                    <img src="/public/img/money.png" alt="">
-                                    7635 ₽
-                                </div>
-                            </div>
-                            <div class="tab-item__buttons max-hidden">
-                                <button class="btn buy btn-filled">
-                                    Записаться
-                                </button>
-                            </div>
-                            <div class="tab-item__plus max-visible hidden">
-                                <img src="/public/img/plus.png" alt="">
-                            </div>
-                        </div>
-                        <div class="tab-item">
-                            <div class="tab-item__name">
+                            <div class="tab-item__name" data-modal="#service">
                                 Программа для двоих “Нирвана”
                             </div>
                             <div class="tab-item__icons max-hidden">
@@ -174,7 +104,79 @@
                             </div>
                         </div>
                         <div class="tab-item">
-                            <div class="tab-item__name">
+                            <div class="tab-item__name" data-modal="#service">
+                                Программа для двоих “Нирвана”
+                            </div>
+                            <div class="tab-item__icons max-hidden">
+                                <div class="icons-icon">
+                                    <img src="/public/img/time.png" alt="">
+                                    60 мин
+                                </div>
+                                <div class="icons-icon">
+                                    <img src="/public/img/money.png" alt="">
+                                    7635 ₽
+                                </div>
+                            </div>
+                            <div class="tab-item__buttons max-hidden">
+                                <button class="btn buy btn-filled">
+                                    Записаться
+                                </button>
+                            </div>
+                            <div class="tab-item__plus max-visible hidden">
+                                <img src="/public/img/plus.png" alt="">
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <div class="tab-item__name" data-modal="#service">
+                                Программа для двоих “Нирвана”
+                            </div>
+                            <div class="tab-item__icons max-hidden">
+                                <div class="icons-icon">
+                                    <img src="/public/img/time.png" alt="">
+                                    60 мин
+                                </div>
+                                <div class="icons-icon">
+                                    <img src="/public/img/money.png" alt="">
+                                    7635 ₽
+                                </div>
+                            </div>
+                            <div class="tab-item__buttons max-hidden">
+                                <button class="btn buy btn-filled">
+                                    Записаться
+                                </button>
+                            </div>
+                            <div class="tab-item__plus max-visible hidden">
+                                <img src="/public/img/plus.png" alt="">
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <div class="tab-item__name" data-modal="#service">
+                                Программа для двоих “Нирвана”
+                            </div>
+                            <div class="tab-item__icons max-hidden">
+                                <div class="icons-icon">
+                                    <img src="/public/img/time.png" alt="">
+                                    60 мин
+                                </div>
+                                <div class="icons-icon">
+                                    <img src="/public/img/money.png" alt="">
+                                    7635 ₽
+                                </div>
+                            </div>
+                            <div class="tab-item__buttons max-hidden">
+                                <button class="btn buy btn-outline">
+                                    Купить сертификат
+                                </button>
+                                <button class="btn buy btn-filled">
+                                    Записаться
+                                </button>
+                            </div>
+                            <div class="tab-item__plus max-visible hidden">
+                                <img src="/public/img/plus.png" alt="">
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <div class="tab-item__name" data-modal="#service">
                                 Программа для двоих “Нирвана”
                             </div>
                             <div class="tab-item__icons max-hidden">
@@ -198,7 +200,7 @@
                             </div>
                         </div>
                         <div class="tab-item">
-                            <div class="tab-item__name">
+                            <div class="tab-item__name" data-modal="#service">
                                 Программа для двоих “Нирвана”
                             </div>
                             <div class="tab-item__icons max-hidden">
@@ -224,7 +226,7 @@
                             </div>
                         </div>
                         <div class="tab-item">
-                            <div class="tab-item__name">
+                            <div class="tab-item__name" data-modal="#service">
                                 Программа для двоих “Нирвана”
                             </div>
                             <div class="tab-item__icons max-hidden">
@@ -247,7 +249,7 @@
                             </div>
                         </div>
                         <div class="tab-item">
-                            <div class="tab-item__name">
+                            <div class="tab-item__name" data-modal="#service">
                                 Программа для двоих “Нирвана”
                             </div>
                             <div class="tab-item__icons max-hidden">
@@ -287,17 +289,17 @@
             <nav class="footer-menu">
                 <ul class="menu-block">
                     <li>
-                        <a href="">О нас</a>
+                        <a href="/pages/about.html">О нас</a>
                     </li>
-                    <li><a href="">Услуги</a></li>
-                    <li><a href="">Акции</a></li>
-                    <li><a href="">Мастера</a></li>
+                    <li><a href="/pages/services.html">Услуги</a></li>
+                    <li><a href="/pages/offers.html">Акции</a></li>
+                    <li><a href="/pages/masters.html">Мастера</a></li>
                 </ul>
                 <ul class="menu-block">
-                    <li><a href="">Правила посещения</a></li>
-                    <li><a href="">Противопоказания</a></li>
-                    <li><a href="">Вакансии</a></li>
-                    <li><a href="">Контакты</a></li>
+                    <li><a href="/pages/rules.html">Правила посещения</a></li>
+                    <li><a href="/pages/rules.html">Противопоказания</a></li>
+                    <li><a href="/pages/vacancy.html">Вакансии</a></li>
+                    <li><a href="/pages/contacts.html">Контакты</a></li>
                 </ul>
             </nav>
             <div class="footer-social">
@@ -311,7 +313,176 @@
             </div>
             
         </footer>
-      </div>
+      </main>
+    </div>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <!-- close sidebar menu -->
+            <div class="sidebar-header">
+              <div class="search">
+                  <img src="/public/img/search.png" alt="">
+              </div>
+              <div class="dismiss">
+                  <img src="/public/img/close.png" alt="">
+              </div>
+            </div>
+            <div class="search-container hidden">
+              <input type="search" placeholder="Ваш запрос">
+            </div>
+            <ul class="list-unstyled menu-elements">
+                <li>
+                    <a class="scroll-link" href="/pages/about.html">О нас</a>
+                </li>
+                <li>
+                    <a class="scroll-link" href="/pages/service.html">Услуги</a>
+                </li>
+                <li>
+                    <a class="scroll-link" href="/pages/offers.html">Акции</a>
+                </li>
+                <li>
+                    <a class="scroll-link" href="/pages/masters.html">Мастера</a>
+                </li>
+            </ul>
+            <ul class="list-unstyled menu-elements menu-elements__sub">
+              <li>
+                <a class="scroll-link" href="/pages/rules.html">Правила посещения</a>
+              </li>
+              <li>
+                <a class="scroll-link" href="/pages/rules.html">Противопоказания</a>
+              </li>
+              <li>
+                <a class="scroll-link" href="/pages/vacancy.html">Вакансии</a>
+              </li>
+              <li>
+                <a class="scroll-link" href="/pages/contacts.html">Контакты</a>
+              </li>
+            </ul>
+            <div class="nav-buttons">
+              <button class="btn btn-filled large">ЗАПИСАТЬСЯ</button>
+              <button class="btn btn-filled large">КУПИТЬ СЕРТИФИКАТ</button>
+            </div>
+     
+        </nav>
+    </div>
+    <div id="service" class="modal">
+        <div class="modal__content">
+            <div class="head">
+                <img class="close__btn" src="/public/img/close.png" alt="">
+            </div>
+            <div class="modal__wrapper">
+                <div class="head__title">
+                    Название услуги/сертификата/имя мастера
+                </div>
+                <div class="modal__wrapper-text">
+                    <p>
+                        Интенсивный глубокий массаж, воздействующий на систему лицевых мышц, мышц декольте и шеи, рекомендуется делать при первых признаках старения, с 25-30 лет.
+                    </p>
+                    <p>
+                        Это эффективная альтернатива омолаживающим инъекциям и операциям. Результат от массажа заметен с первого сеанса.
+Для достижения устойчивого эффекта рекомендуется пройти курс из 10-12 процедур 1 раз в 3-7 дней, в зависимости от состояния кожи. Затем следует делать поддерживающие процедуры раз в месяц.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="cart" class="modal">
+        <div class="modal__content">
+            <div class="head">
+                <img class="close__btn" src="/public/img/close.png" alt="">
+            </div>
+            <div class="modal__wrapper">
+                <div class="head__title">
+                    Корзина
+                </div>
+                <div class="modal__wrapper-text">
+                    <div class="modal__wrapper-cart">
+                        <div class="top">
+                            <div class="cart-item">
+                                <div class="cart-name">
+                                    SPA программа “Морская прогулка”
+                                </div>
+                                <div class="cart-items">
+                                    <div class="cart-amount">
+                                        <img src="/public/img/minus.png" alt="">
+                                        <span>2</span>
+                                        <img src="/public/img/plus.png" alt="">
+                                    </div>
+                                    <div class="cart-price">
+                                        10280 ₽
+                                    </div>
+                                    <div class="cart-delete">
+                                        <img src="/public/img/x-circle.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-item">
+                                <div class="cart-name">
+                                    SPA программа “Стройность”
+                                </div>
+                                <div class="cart-items">
+                                    <div class="cart-amount">
+                                        <img src="/public/img/minus.png" alt="">
+                                        <span>1</span>
+                                        <img src="/public/img/plus.png" alt="">
+                                    </div>
+                                    <div class="cart-price">
+                                        7050 ₽
+                                    </div>
+                                    <div class="cart-delete">
+                                        <img src="/public/img/x-circle.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-all">
+                                <span>ИТОГО</span>
+                                <span class="price">17330 ₽</span>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="head__title">
+                                Оплата
+                            </div>
+                            <div class="payment">
+                                <div class="left-form">
+                                    <form action="">
+                                        <div class="controlled-form">
+                                            <input class="payment-input" type="email" placeholder="yourmail@yourmail.ru" />
+                                            <div class="exclude">
+                                                <img src="/public/img/stop.png" alt="">
+                                                <span>@gmail.com</span>
+                                                <span>@cloud.com</span>
+                                            </div>
+                                        </div>
+                                        <div class="controlled-form">
+                                            <input type="text" placeholder="Имя Фамилия" />
+                                        </div>
+                                        <div class="controlled-form">
+                                            <input type="tel" placeholder="+7 123 456 78 90" />
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="right-policy">
+                                    <p>Запись на процедуру становится действительной только после подтверждения заказа оператором!</p>
+                                    <p>Если администратор не может дозвониться до вас в течение трех календарных дней, то заказ аннулируется.</p>
+                                    <div class="checkboxes">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="checkbox"/>
+                                            <label for="checkbox">Согласие с правилами посещения термального центра</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="checkbox2" />
+                                            <label for="checkbox2">Даю согласие на обработку персональных данных</label>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-filled large right-btn">ОПЛАТИТЬ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <script type="module" src="/scripts/index.js"></script>
     <script type="module" src="/scripts/service.js"></script>

@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../styles/offers.css">
+    <link rel="stylesheet" href="../styles/sidebar.css">
+    <link rel="stylesheet" href="../styles/modal.css">
     <title>Vite App</title>
   </head>
   <body>
@@ -48,7 +50,7 @@
                                 </div>
                             </div>
                             <div class="offer-item__buttons">
-                                <button class="btn buy btn-filled">Записаться</button>
+                                <button class="btn buy btn-filled" data-modal="#subscribe">Записаться</button>
                                 <button class="btn buy btn-outline">Купить сертификат</button>
                             </div>
                         </div>
@@ -57,8 +59,7 @@
                                 <img src="/public/img/melin.png" alt="">
                             </div>
                             <div class="offer-item__title">
-                                <span>Обертывание тела</span>
-                                <span>“Арбузный фреш”</span>
+                                <span>Обертывание тела “Арбузный фреш”</span>
                             </div>
                             <div class="offer-item__icons">
                                 <div class="icon">
@@ -79,8 +80,7 @@
                                 <img src="/public/img/spa5.jpeg" alt="">
                             </div>
                             <div class="offer-item__title">
-                                <span>Расслабляющий массаж </span>
-                                <span>лица и головы</span>
+                                <span>Расслабляющий массаж лица и головы</span>
                             </div>
                             <div class="offer-item__icons">
                                 <div class="icon">
@@ -93,7 +93,7 @@
                                 </div>
                             </div>
                             <div class="offer-item__buttons">
-                                <button class="btn buy btn-filled">Записаться</button>
+                                <button class="btn buy btn-filled" data-modal="#subscribe">Записаться</button>
                                 <button class="btn buy btn-outline">Купить сертификат</button>
                             </div>
                         </div>
@@ -102,8 +102,7 @@
                                 <img src="/public/img/woman.png" alt="">
                             </div>
                             <div class="offer-item__title">
-                                <span>SPA-программа “Морская  </span>
-                                <span>прогулка”</span>
+                                <span>SPA-программа “Морская прогулка”</span>
                             </div>
                             <div class="offer-item__icons">
                                 <div class="icon">
@@ -116,7 +115,7 @@
                                 </div>
                             </div>
                             <div class="offer-item__buttons">
-                                <button class="btn buy btn-filled">Записаться</button>
+                                <button class="btn buy btn-filled" data-modal="#subscribe">Записаться</button>
                                 <button class="btn buy btn-outline">Купить сертификат</button>
                             </div>
                         </div>
@@ -125,8 +124,7 @@
                                 <img src="/public/img/relax.png" alt="">
                             </div>
                             <div class="offer-item__title">
-                                <span>SPA-программа “Лето</span>
-                                <span>на двоих”</span>
+                                <span>SPA-программа “Лето на двоих”</span>
                             </div>
                             <div class="offer-item__icons">
                                 <div class="icon">
@@ -139,7 +137,7 @@
                                 </div>
                             </div>
                             <div class="offer-item__buttons">
-                                <button class="btn buy btn-filled">Записаться</button>
+                                <button class="btn buy btn-filled" data-modal="#subscribe">Записаться</button>
                                 <button class="btn buy btn-outline">Купить сертификат</button>
                             </div>
                         </div>
@@ -148,8 +146,7 @@
                                 <img src="/public/img/cocos.png" alt="">
                             </div>
                             <div class="offer-item__title">
-                                <span>SPA-программа для двоих </span>
-                                <span>“Баунти”</span>
+                                <span>SPA-программа для двоих “Баунти”</span>
                             </div>
                             <div class="offer-item__icons">
                                 <div class="icon">
@@ -180,17 +177,17 @@
           <nav class="footer-menu">
               <ul class="menu-block">
                   <li>
-                      <a href="">О нас</a>
+                      <a href="/pages/about.html">О нас</a>
                   </li>
-                  <li><a href="">Услуги</a></li>
-                  <li><a href="">Акции</a></li>
-                  <li><a href="">Мастера</a></li>
+                  <li><a href="/pages/services.html">Услуги</a></li>
+                  <li><a href="/pages/offers.html">Акции</a></li>
+                  <li><a href="/pages/masters.html">Мастера</a></li>
               </ul>
               <ul class="menu-block">
-                  <li><a href="">Правила посещения</a></li>
-                  <li><a href="">Противопоказания</a></li>
-                  <li><a href="">Вакансии</a></li>
-                  <li><a href="">Контакты</a></li>
+                  <li><a href="/pages/rules.html">Правила посещения</a></li>
+                  <li><a href="/pages/rules.html">Противопоказания</a></li>
+                  <li><a href="/pages/vacancy.html">Вакансии</a></li>
+                  <li><a href="/pages/contacts.html">Контакты</a></li>
               </ul>
           </nav>
           <div class="footer-social">
@@ -203,8 +200,100 @@
               <img src="/public/img/vk.png" alt="">
           </div>
           
-      </footer>
-      </div>
+        </footer>
+      </main>
     </div>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <!-- close sidebar menu -->
+            <div class="sidebar-header">
+              <div class="search">
+                  <img src="/public/img/search.png" alt="">
+              </div>
+              <div class="dismiss">
+                  <img src="/public/img/close.png" alt="">
+              </div>
+            </div>
+            <div class="search-container hidden">
+              <input type="search" placeholder="Ваш запрос">
+            </div>
+            <ul class="list-unstyled menu-elements">
+                <li>
+                    <a class="scroll-link" href="/pages/about.html">О нас</a>
+                </li>
+                <li>
+                    <a class="scroll-link" href="/pages/service.html">Услуги</a>
+                </li>
+                <li>
+                    <a class="scroll-link" href="/pages/offers.html">Акции</a>
+                </li>
+                <li>
+                    <a class="scroll-link" href="/pages/masters.html">Мастера</a>
+                </li>
+            </ul>
+            <ul class="list-unstyled menu-elements menu-elements__sub">
+              <li>
+                <a class="scroll-link" href="/pages/rules.html">Правила посещения</a>
+              </li>
+              <li>
+                <a class="scroll-link" href="/pages/rules.html">Противопоказания</a>
+              </li>
+              <li>
+                <a class="scroll-link" href="/pages/vacancy.html">Вакансии</a>
+              </li>
+              <li>
+                <a class="scroll-link" href="/pages/contacts.html">Контакты</a>
+              </li>
+            </ul>
+            <div class="nav-buttons">
+              <button class="btn btn-filled large">ЗАПИСАТЬСЯ</button>
+              <button class="btn btn-filled large">КУПИТЬ СЕРТИФИКАТ</button>
+            </div>
+     
+        </nav>
+    </div>
+    <div id="subscribe" class="modal">
+        <div class="modal__content">
+            <div class="head">
+                <img class="close__btn" src="/public/img/close.png" alt="">
+            </div>
+            <div class="modal__wrapper">
+                <div class="head__title">
+                    Записаться
+                </div>
+                <div class="modal__wrapper-text register">
+                    <div class="left-form">
+                        <form action="">
+                            <div class="controlled-form">
+                                <input type="email" placeholder="Услуга" />
+                            </div>
+                            <div class="controlled-form">
+                                <input type="text" placeholder="ДД.ММ.ГГГГ" />
+                            </div>
+                            <div class="controlled-form">
+                                <input type="text" placeholder="Имя Фамилия" />
+                            </div>
+                            <div class="controlled-form">
+                                <input type="tel" placeholder="+7 123 456 78 90" />
+                            </div>
+                        </form>
+                    </div>
+                    <div class="right-policy">
+                        <p>Запись на процедуру становится действительной только после подтверждения заказа оператором!</p>
+                        <p>Если администратор не может дозвониться до вас в течение трех календарных дней, то заказ аннулируется.</p>
+                        <div class="checkboxes">
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox2" />
+                                <label for="checkbox2">Даю согласие на обработку персональных данных</label>
+                            </div>
+                        </div>
+                        <button class="btn btn-filled large right-btn">ЗАПИСАТЬСЯ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/index.js" type="module"></script>
   </body>
 </html>

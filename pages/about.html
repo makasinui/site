@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../styles/about.css">
+    <link rel="stylesheet" href="../styles/sidebar.css">
     <title>Vite App</title>
   </head>
   <body>
@@ -23,11 +24,14 @@
           </div>
         </header>
         <div class="about-content">
+            <h1 class="title max-visible hidden">
+                О компании
+            </h1>
             <div class="about-content__image">
                 <img src="/public/img/about.png" alt="">
             </div>
             <section class="about-text container">
-                <h1 class="title">
+                <h1 class="title max-hidden">
                     О компании
                 </h1>
                 <p class="about-text__info first">Мира Спа – пространство созданное для релакса, удовольствия и оздоровления. Сочетание высококачественных продуктов с превосходными методами применения является гарантией лучших процедур в нашем СПА салоне, а широкий набор услуг и процедур позволяет каждому гостю получить то, что способно максимально расслабить, улучшить состояние здоровья и внешности.</p>
@@ -49,17 +53,17 @@
           <nav class="footer-menu">
               <ul class="menu-block">
                   <li>
-                      <a href="">О нас</a>
+                      <a href="/pages/about.html">О нас</a>
                   </li>
-                  <li><a href="">Услуги</a></li>
-                  <li><a href="">Акции</a></li>
-                  <li><a href="">Мастера</a></li>
+                  <li><a href="/pages/services.html">Услуги</a></li>
+                  <li><a href="/pages/offers.html">Акции</a></li>
+                  <li><a href="/pages/masters.html">Мастера</a></li>
               </ul>
               <ul class="menu-block">
-                  <li><a href="">Правила посещения</a></li>
-                  <li><a href="">Противопоказания</a></li>
-                  <li><a href="">Вакансии</a></li>
-                  <li><a href="">Контакты</a></li>
+                  <li><a href="/pages/rules.html">Правила посещения</a></li>
+                  <li><a href="/pages/rules.html">Противопоказания</a></li>
+                  <li><a href="/pages/vacancy.html">Вакансии</a></li>
+                  <li><a href="/pages/contacts.html">Контакты</a></li>
               </ul>
           </nav>
           <div class="footer-social">
@@ -75,7 +79,56 @@
           
       </footer>
       </div>
-    </div>
+      <div class="wrapper">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <!-- close sidebar menu -->
+            <div class="sidebar-header">
+              <div class="search">
+                  <img src="/public/img/search.png" alt="">
+              </div>
+              <div class="dismiss">
+                  <img src="/public/img/close.png" alt="">
+              </div>
+            </div>
+            <div class="search-container hidden">
+              <input type="search" placeholder="Ваш запрос">
+            </div>
+            <ul class="list-unstyled menu-elements">
+                <li>
+                    <a class="scroll-link" href="/pages/about.html">О нас</a>
+                </li>
+                <li>
+                    <a class="scroll-link" href="/pages/service.html">Услуги</a>
+                </li>
+                <li>
+                    <a class="scroll-link" href="/pages/offers.html">Акции</a>
+                </li>
+                <li>
+                    <a class="scroll-link" href="/pages/masters.html">Мастера</a>
+                </li>
+            </ul>
+            <ul class="list-unstyled menu-elements menu-elements__sub">
+              <li>
+                <a class="scroll-link" href="/pages/rules.html">Правила посещения</a>
+              </li>
+              <li>
+                <a class="scroll-link" href="/pages/rules.html">Противопоказания</a>
+              </li>
+              <li>
+                <a class="scroll-link" href="/pages/vacancy.html">Вакансии</a>
+              </li>
+              <li>
+                <a class="scroll-link" href="/pages/contacts.html">Контакты</a>
+              </li>
+            </ul>
+            <div class="nav-buttons">
+              <button class="btn btn-filled large">ЗАПИСАТЬСЯ</button>
+              <button class="btn btn-filled large">КУПИТЬ СЕРТИФИКАТ</button>
+            </div>
+        </nav>
+      </div>
+    </body>
     <script type="module" src="/scripts/index.js"></script>
   </body>
 </html>

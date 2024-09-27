@@ -12,6 +12,10 @@
     flex-direction: column;
     cursor: pointer;
 }
+.master:hover {
+    transition: 0.5s all;
+    background-color: rgba(247, 161, 153, 0.21);
+}
 
 .master-fio {
     font-size: 18px;

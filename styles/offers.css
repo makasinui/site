@@ -2,20 +2,22 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 90px 0;
+    gap: 90px 12.5px;
     margin-top: 90px;
 }
 
 .offer-item {
     display: flex;
+    flex-basis: 32%;
     flex-direction: column;
 }
 .offer-item__image {
     height: 384px;
 }
 .offer-item__image img {
-    max-height: 384px;
+    height: 384px;
     width: 424px;
+    max-width: 100%;
     object-fit: cover;
 }
 
@@ -24,15 +26,15 @@
     margin-top: 30px;
     margin-bottom: 25px;
     line-height: 36px;
-    display: flex;
-    align-items: start;
-    flex-direction: column;
     height: 80px;
 }
 .offer-item__title span {
     display: block;
     margin-top: auto;
-    border-bottom: 2px dashed rgba(181, 34, 54, 1);
+    text-decoration: dashed;
+    text-decoration-color: rgba(181, 34, 54, 1);
+    text-decoration-line: underline;
+    text-underline-offset: 5px;
 }
 .offer-item__icons {
     display: flex;
@@ -50,4 +52,87 @@
     display: flex;
     justify-content: space-between;
     margin-top: 25px;
+}
+
+@media (max-width: 1100px) {
+    .offers-block {
+        gap: 25px;
+    }
+    .offer-item__image {
+        height: auto;
+    }
+    .offer-item__image img {
+        max-width: 100%;
+    }
+    .offer-item {
+        flex-basis: 48%;
+    }
+    .offer-item__title {
+        font-size: 24px;
+    }
+    .offer-item__icons {
+        font-size: 20px;
+    }
+    .offer-item__icons img {
+        width: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .offers-block {
+        gap: 25px 10px;
+        margin-top: 60px;
+    } 
+    .offer-item {
+        flex-basis: 48%;
+    }
+    .offer-item__title {
+        display: inline;
+        font-size: 16px;
+        margin-top: 6px;
+        margin-bottom: 0;
+    }
+    .offer-item__title span {
+        border-bottom: 0;
+        text-decoration: dashed;
+        text-decoration-color: rgba(181, 34, 54, 1);
+        text-decoration-line: underline;
+        text-underline-offset: 5px;
+    }
+    .offer-item__image {
+        object-fit: cover;
+    }
+    .offer-item__image img {
+        height: auto;
+    }
+    .offer-item__buttons {
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+    .offer-item__buttons .btn {
+        max-width: none;
+        width: 100%;
+    }
+    .offer-item__icons {
+        font-size: 14px;
+        margin-top: 15px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .offer-item__icons span {
+        padding-left: 5px;
+    }
+    .offer-item__icons img {
+        width: 24px;
+        height: 24px;
+    }
+    .offers-text .title {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 405px) {
+    .offer-item__title {
+        margin-bottom: 10px;
+    }
 }

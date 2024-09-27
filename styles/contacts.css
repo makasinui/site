@@ -2,6 +2,7 @@
     margin-top: 90px;
     display: flex;
     justify-content: space-between;
+    gap: 25px;
 }
 
 .contacts-block .left {
@@ -26,4 +27,35 @@
     flex-direction: column;
     height: 100%;
     justify-content: end;
+}
+
+.map img {
+    max-width: 100%;
+}
+
+@media (max-width: 1000px) {
+    .left-item__text {
+        font-size: 14px;
+    }
+    .left-item span {
+        font-size: 20px;
+    }
+    .left-item img {
+        max-width: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contacts-block {
+        flex-direction: column-reverse;
+    }
+    .map {
+        margin: 0 auto;
+    }
+    .left-item img {
+       width: 32px;
+    }
+    .left-item span {
+        font-size: 18px;
+    }
 }
