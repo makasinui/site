@@ -256,6 +256,9 @@ body, html, #app {
 }
 
 @media (max-width: 768px) {
+  .header-img img {
+    max-width: 65px;
+  }
   .max-hidden {
     display: none;
   }

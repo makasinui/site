@@ -18,3 +18,9 @@
     padding: 18px 0;
     text-align: center;
 }
+
+@media (max-width: 768px) {
+    .master {
+        max-width: 45%;
+    }
+}
