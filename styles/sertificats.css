@@ -1,0 +1,21 @@
+.sertificats-page {
+    height: 100%;
+}
+
+.header {
+    position: absolute;
+}
+
+.sertificats-content__image {
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: a;
+}
+.sertificats-content__image img {
+    width: 100%;
+    max-height: 810px;
+    height: 100%;
+    object-fit: cover;
+}

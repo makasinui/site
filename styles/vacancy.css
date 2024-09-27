@@ -1,0 +1,40 @@
+.vacancy-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.vacancy-item {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+    padding-bottom: 45px;
+    margin-bottom: 30px;
+}
+
+.vacancy-item__title {
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.vacancy-item__description {
+    font-size: 16px;
+}
+
+.vacancy-item__footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.vacancy-item__footer .icons {
+    display: flex;
+    font-size: 28px;
+    flex-basis: 40%;
+    justify-content: space-between;
+}
+.vacancy-item__footer .icons span {
+    padding-left: 15px;
+}
+.vacancy-item .button button{
+    text-transform: uppercase;
+
+}

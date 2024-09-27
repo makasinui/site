@@ -1,29 +1,24 @@
 import './index';
 document.addEventListener('DOMContentLoaded', () => {
-    const serviceTab = document.querySelectorAll('.service');
     const contentBtns = document.querySelectorAll('.btn-outline');
 
-    const clearActive = () => serviceTab.forEach(item => item.classList.remove('active'));
     const clearActiveBtn = () => contentBtns.forEach(item => item.classList.remove('active'));
-
-    serviceTab.forEach(item => item.addEventListener('click', (e) => {
-        clearActive();
-        item.classList.add('active');
-        const serviceActive = document.querySelector('.service-active-content');
-        serviceActive.classList.remove('hidden')
-    }))
 
     contentBtns.forEach(item => item.addEventListener('click', () => {
         clearActiveBtn();
-        item.classList.add('active');
-    }));
-
+        item.classList.add('active')
+        document.querySelector('.hidden').classList.remove('hidden');
+    }))
     const pluses = document.querySelectorAll('.tab-item__plus');
-    const allDisable = () => document.querySelectorAll('.visible').forEach(item => {
+    const allDisable = () => {
+        
+        const plusIcons = document.querySelectorAll('[src=""]')
+        document.querySelectorAll('.visible').forEach(item => {
         item.classList.add('max-hidden');
         item.classList.remove('visible');
-        item.setAttribute('src', '/img/plus.png')
-    });
+            
+    }
+    )};
     pluses.forEach(item => item.addEventListener('click', (e) => {
         if(e.target.getAttribute('src') === '/img/x.png') {
             allDisable();

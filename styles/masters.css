@@ -1,0 +1,20 @@
+.masters-page {
+    height: 100%;
+}
+.masters-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 25px;
+}
+.master {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.master-fio {
+    font-size: 18px;
+    padding: 18px 0;
+    text-align: center;
+}
