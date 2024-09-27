@@ -20,9 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     )};
     pluses.forEach(item => item.addEventListener('click', (e) => {
-        if(e.target.getAttribute('src') === '/img/x.png') {
+        if(e.target.getAttribute('src') === '/public/img/x.png') {
             allDisable();
-            e.target.setAttribute('src', '/img/plus.png')
+            e.target.setAttribute('src', '/public/img/plus.png')
             return
         }
         allDisable();
@@ -31,6 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
             item.classList.add('visible');
             item.classList.remove('max-hidden');
         });
-        e.target.setAttribute('src', "/img/x.png")
+        e.target.setAttribute('src', "/public/img/x.png")
     }))
 });
