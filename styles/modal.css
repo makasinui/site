@@ -7,7 +7,6 @@
     top: 0;
     z-index: 100000000;
     color: black;
-    background: rgba(0, 0, 0, 0.8);
 }
 .modal .head {
     display: flex;
@@ -121,11 +120,13 @@
 .cart-all .price {
     font-size: 43px;
 }
+.cart-amount img {
+    padding: 1px;
+}
 .cart-amount img:hover {
     transition: 0.5s all;
     border-radius: 50%;
     background-color: rgba(233, 81, 97, 0.21);
-    padding: 1px;
 }
 .bottom .head__title {
     margin-top: 60px;

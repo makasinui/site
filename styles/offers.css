@@ -11,12 +11,10 @@
     flex-basis: 32%;
     flex-direction: column;
 }
-.offer-item__image {
-    height: 384px;
-}
+
 .offer-item__image img {
-    height: 384px;
-    width: 424px;
+    height: auto;
+    width: 100%;
     max-width: 100%;
     object-fit: cover;
 }
@@ -36,6 +34,11 @@
     text-decoration-line: underline;
     text-underline-offset: 5px;
 }
+/* .offer-item__title span:hover {
+    transition: 0.5s all ;
+    text-decoration: underline;
+    color: rgba(113, 32, 63, 1);
+} */
 .offer-item__icons {
     display: flex;
     font-size: 24px;

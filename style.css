@@ -49,6 +49,9 @@ body, html, #app {
 .main-page .header {
   position: absolute;
 }
+.footer.container {
+  padding: 0 60px;
+}
 .header-menu {
   display: flex;
 }
